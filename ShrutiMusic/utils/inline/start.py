@@ -22,7 +22,7 @@ def private_panel(_):
             )
         ],
         [
-            InlineKeyboardButton(text=["Sᴜᴘᴘᴏʀᴛ"], url=config.SUPPORT_CHANNEL),"),
+            InlineKeyboardButton(text=["Sᴜᴘᴘᴏʀᴛ"], url=config.SUPPORT_CHANNEL),
             InlineKeyboardButton(text=["Dᴇᴠᴇʟᴏᴘᴇʀ"], user_id=config.OWNER_ID),
             InlineKeyboardButton(text=["Gʀᴏᴜᴘ"], url=config.SUPPORT_GROUP),
         ],
