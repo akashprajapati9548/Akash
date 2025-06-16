@@ -10,8 +10,7 @@ def start_panel(_):
             ),
             InlineKeyboardButton(text=_["S_B_2"], url=config.SUPPORT_GROUP),
         ],
-        [
-    ]
+
     return buttons
 
 def private_panel(_):
