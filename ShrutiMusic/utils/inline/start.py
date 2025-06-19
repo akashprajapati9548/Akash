@@ -6,7 +6,7 @@ def start_panel(_):
     buttons = [
         [
             InlineKeyboardButton(
-                text="🥀ᴀᴅᴅ ᴍᴇ ɪɴ ɴᴇᴡ ɢʀᴏᴜᴘ🥀", url=f"https://t.me/{app.username}?startgroup=true"
+                text="🥀ᴀᴅᴅ ᴍᴇ🥀", url=f"https://t.me/{app.username}?startgroup=true"
             ),
             InlineKeyboardButton(text="🍷Sᴜᴘᴘᴏʀᴛ🍷", url=config.SUPPORT_GROUP),
         ]
