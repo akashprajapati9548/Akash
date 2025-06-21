@@ -2,7 +2,7 @@
 <img src="https://graph.org/file/fc06ba63d7f375dc96786-4685a20c4197b85ca9.jpg" alt="AnanyaMusicBot Logo" width="500px">
 </p>
 
-<h1 align="center">🎵 Shruti Music Bot 🎵</h1>
+<h1 align="center">🎵 Ananya Music Bot 🎵</h1>
 
 <p align="center">
   <b>A Powerful Telegram Music Bot to Play Songs in Voice Chats</b>
