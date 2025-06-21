@@ -34,12 +34,12 @@
         },
         "OWNER_ID": {
             "description": "The user id of user whom you would like to add as OWNER.",
-            "value": "",
+            "value": "8123663143",
             "required": true
         },
         "OWNER_USERNAME": {
             "description": "The username of the owner (without @)",
-            "value": "8123663143",
+            "value": "",
             "required": false
         },
         "STRING_SESSION": {
