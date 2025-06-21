@@ -14,12 +14,12 @@
     "env": {
         "API_ID": {
             "description": "Get this value from https://my.telegram.org",
-            "value": "29448785",
+            "value": "20506399",
             "required": true
         },
         "API_HASH": {
             "description": "Get this value from https://my.telegram.org",
-            "value": "599574f6aff0a09ebb76305b58e7e9c2",
+            "value": "527e72f3b52fcdb44195bf96814f1c96",
             "required": true
         },
         "BOT_TOKEN": {
@@ -34,7 +34,7 @@
         },
         "OWNER_ID": {
             "description": "The user id of user whom you would like to add as OWNER.",
-            "value": "1786683163",
+            "value": "8123663143",
             "required": true
         },
         "OWNER_USERNAME": {
@@ -64,17 +64,17 @@
         },
         "LOG_GROUP_ID": {
             "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Do not ever try to put channel ID here.",
-            "value": "-1002321189618",
+            "value": "-1002584701675",
             "required": true
         },
         "SUPPORT_GROUP": {
             "description": "Your support group username (without @)",
-            "value": "https://t.me/ShrutiBotsupport",
+            "value": "https://t.me/Aura_Kingdom_Group",
             "required": false
         },
         "SUPPORT_CHANNEL": {
             "description": "Your support channel username (without @)",
-            "value": "https://t.me/ShrutiBots",
+            "value": "https://t.me/Sanatani_Network",
             "required": false
         },
         "COOKIE_URL": {
