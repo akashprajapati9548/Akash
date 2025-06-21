@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://files.catbox.moe/eehxb4.jpg" alt="AnanyaMusicBot Logo" width="500px">
+<img src="https://graph.org/file/fc06ba63d7f375dc96786-4685a20c4197b85ca9.jpg" alt="AnanyaMusicBot Logo" width="500px">
 </p>
 
 <h1 align="center">🎵 Shruti Music Bot 🎵</h1>
