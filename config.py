@@ -87,18 +87,18 @@ AUTO_LEAVING_ASSISTANT = bool(os.getenv("AUTO_LEAVING_ASSISTANT", True))
 # 🖼️ Image URLs (Can be customized)
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-START_IMG_URL = os.getenv("START_IMG_URL", "https://files.catbox.moe/cky65b.jpg")
-PING_IMG_URL = os.getenv("PING_IMG_URL", "https://files.catbox.moe/cky65b.jpg")
-PLAYLIST_IMG_URL = "https://files.catbox.moe/cky65b.jpg"
-STATS_IMG_URL = "https://files.catbox.moe/cky65b.jpg"
-TELEGRAM_AUDIO_URL = "https://files.catbox.moe/cky65b.jpg"
-TELEGRAM_VIDEO_URL = "https://files.catbox.moe/cky65b.jpg"
-STREAM_IMG_URL = "https://files.catbox.moe/cky65b.jpg"
-SOUNCLOUD_IMG_URL = "https://files.catbox.moe/cky65b.jpg"
-YOUTUBE_IMG_URL = "https://files.catbox.moe/cky65b.jpg"
-SPOTIFY_ARTIST_IMG_URL = "https://files.catbox.moe/cky65b.jpg"
-SPOTIFY_ALBUM_IMG_URL = "https://files.catbox.moe/cky65b.jpg"
-SPOTIFY_PLAYLIST_IMG_URL = "https://files.catbox.moe/cky65b.jpg"
+START_IMG_URL = os.getenv("START_IMG_URL", "https://graph.org/file/fc06ba63d7f375dc96786-4685a20c4197b85ca9.jpg")
+PING_IMG_URL = os.getenv("PING_IMG_URL", "https://graph.org/file/fc06ba63d7f375dc96786-4685a20c4197b85ca9.jpg")
+PLAYLIST_IMG_URL = "https://graph.org/file/fc06ba63d7f375dc96786-4685a20c4197b85ca9.jpg"
+STATS_IMG_URL = "https://graph.org/file/fc06ba63d7f375dc96786-4685a20c4197b85ca9.jpg"
+TELEGRAM_AUDIO_URL = "https://graph.org/file/fc06ba63d7f375dc96786-4685a20c4197b85ca9.jpg"
+TELEGRAM_VIDEO_URL = "https://graph.org/file/fc06ba63d7f375dc96786-4685a20c4197b85ca9.jpg"
+STREAM_IMG_URL = "https://graph.org/file/fc06ba63d7f375dc96786-4685a20c4197b85ca9.jpg"
+SOUNCLOUD_IMG_URL = "https://graph.org/file/fc06ba63d7f375dc96786-4685a20c4197b85ca9.jpg"
+YOUTUBE_IMG_URL = "https://graph.org/file/fc06ba63d7f375dc96786-4685a20c4197b85ca9.jpg"
+SPOTIFY_ARTIST_IMG_URL = "https://graph.org/file/fc06ba63d7f375dc96786-4685a20c4197b85ca9.jpg"
+SPOTIFY_ALBUM_IMG_URL = "https://graph.org/file/fc06ba63d7f375dc96786-4685a20c4197b85ca9.jpg"
+SPOTIFY_PLAYLIST_IMG_URL = "https://graph.org/file/fc06ba63d7f375dc96786-4685a20c4197b85ca9.jpg"
 
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 # 🔐 User & Bot State Stores
