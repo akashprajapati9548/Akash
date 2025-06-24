@@ -214,7 +214,7 @@ async def play_commnd(
                 try:
                     details, plist_id = await Spotify.album(url)
 
-except:
+            except:
                     return await mystic.edit_text(_["play_3"])
                 streamtype = "playlist"
                 plist_type = "spalbum"
