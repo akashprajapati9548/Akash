@@ -57,3 +57,43 @@ async def play_commnd(
     url,
   
   fplay,
+    ):
+    mystic = await message.reply_text(
+        _["play_2"].format(channel) if channel else _["play_1"]
+    )
+    plist_id = None
+    slider = None
+    plist_type = None
+    spotify = None
+    user_id = message.from_user.id
+    user_name = message.from_user.first_name
+    audio_telegram = (
+        (message.reply_to_message.audio or message.reply_to_message.voice)
+        if message.reply_to_message
+        else None
+    )
+    video_telegram = (
+        (message.reply_to_message.video or message.reply_to_message.document)
+        if message.reply_to_message
+        else None
+    )
+    if audio_telegram:
+        if audio_telegram.file_size > 104857600:
+            return await mystic.edit_text(_["play_5"])
+        duration_min = seconds_to_min(audio_telegram.duration)
+        if (audio_telegram.duration) > config.DURATION_LIMIT:
+            return await mystic.edit_text(
+                _["play_6"].format(config.DURATION_LIMIT_MIN, app.mention)
+            )
+        file_path = await Telegram.get_filepath(audio=audio_telegram)
+        if await Telegram.download(_, message, mystic, file_path):
+            message_link = await Telegram.get_link(message)
+            file_name = await Telegram.get_filename(audio_telegram, audio=True)
+            dur = await Telegram.get_duration(audio_telegram, file_path)
+            details = {
+                "title": file_name,
+                "link": message_link,
+                "path": file_path,
+                "dur": dur,
+            }
+            
