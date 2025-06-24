@@ -148,3 +148,63 @@ async def play_commnd(
                     streamtype="telegram",
                     forceplay=fplay,
             )
+
+                    details["title"],
+                    details["duration_min"],
+                )
+        elif await Spotify.valid(url):
+            spotify = True
+            if not config.SPOTIFY_CLIENT_ID and not config.SPOTIFY_CLIENT_SECRET:
+                return await mystic.edit_text(
+                    "» sᴘᴏᴛɪғʏ ɪs ɴᴏᴛ sᴜᴘᴘᴏʀᴛᴇᴅ ʏᴇᴛ.\n\nᴘʟᴇᴀsᴇ ᴛʀʏ ᴀɢᴀɪɴ ʟᴀᴛᴇʀ."
+                )
+            if "track" in url:
+                try:
+                    details, track_id = await Spotify.track(url)
+                except:
+                    return await mystic.edit_text(_["play_3"])
+                streamtype = "youtube"
+                img = details["thumb"]
+                cap = _["play_10"].format(details["title"], details["duration_min"])
+            elif "playlist" in url:
+                try:
+                    details, plist_id = await Spotify.playlist(url)
+                except Exception:
+                    return await mystic.edit_text(_["play_3"])
+                streamtype = "playlist"
+                plist_type = "spplay"
+                img = config.SPOTIFY_PLAYLIST_IMG_URL
+                cap = _["play_11"].format(app.mention, message.from_user.mention)
+            elif "album" in url:
+                try:
+                    details, plist_id = await Spotify.album(url)
+                except:
+                    return await mystic.edit_text(_["play_3"])
+                streamtype = "playlist"
+                plist_type = "spalbum"
+                img = config.SPOTIFY_ALBUM_IMG_URL
+                cap = _["play_11"].format(app.mention, message.from_user.mention)
+            elif "artist" in url:
+                try:
+                    details, plist_id = await Spotify.artist(url)
+                except:
+                    return await mystic.edit_text(_["play_3"])
+                streamtype = "playlist"
+                plist_type = "spartist"
+                img = config.SPOTIFY_ARTIST_IMG_URL
+                cap = _["play_11"].format(message.from_user.first_name)
+            else:
+                return await mystic.edit_text(_["play_15"])
+        elif await Apple.valid(url):
+            if "album" in url:
+                try:
+                    details, track_id = await Apple.track(url)
+                except:
+                    return await mystic.edit_text(_["play_3"])
+                streamtype = "youtube"
+                img = details["thumb"]
+                cap = _["play_10"].format(details["title"], details["duration_min"])
+            elif "playlist" in url:
+                spotify = True
+                try
+                :
