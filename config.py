@@ -65,8 +65,8 @@ TG_VIDEO_FILESIZE_LIMIT = int(os.getenv("TG_VIDEO_FILESIZE_LIMIT", 2145386496))
 SPOTIFY_CLIENT_ID = os.getenv("SPOTIFY_CLIENT_ID", None)
 SPOTIFY_CLIENT_SECRET = os.getenv("SPOTIFY_CLIENT_SECRET", None)
 
-API_KEY = os.getenv("API_KEY", "b9f6ba_IdlKyLphAbmvqqhVTJ-z1AIbNp5pMnMi")
-API_URL = os.getenv("API_URL", "https://tgmusic.fallenapi.fun")
+API_KEY = os.getenv("API_KEY", "30DxNexGenBotsdfd9e9")
+API_URL = os.getenv("API_URL", "https://api.thequickearn.xyz")
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 # 🧵 Session Strings (Pyrogram V2)
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
