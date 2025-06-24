@@ -1,20 +1,19 @@
+# Base image with both Python and Node.js
 FROM nikolaik/python-nodejs:python3.10-nodejs19
 
-# Install ffmpeg
-RUN apt-get update \
-    && apt-get install -y --no-install-recommends ffmpeg \
-    && apt-get clean \
-    && rm -rf /var/lib/apt/lists/*
+# Install ffmpeg for audio streaming
+RUN apt-get update && apt-get install -y --no-install-recommends ffmpeg && \
+    apt-get clean && rm -rf /var/lib/apt/lists/*
 
-# Copy code
+# Copy all files from your local project to the container
 COPY . /app/
 WORKDIR /app/
 
-# Make sure start script is executable
+# Make sure the start script is executable
 RUN chmod +x start
 
-# Install Python dependencies (if required)
-RUN pip3 install --no-cache-dir -U -r requirements.txt || true
+# Optional: Install Python dependencies if requirements.txt exists
+RUN [ -f requirements.txt ] && pip3 install --no-cache-dir -U -r requirements.txt || true
 
-# Start the bot
+# Start the bot using start script
 CMD ["bash", "start"]
