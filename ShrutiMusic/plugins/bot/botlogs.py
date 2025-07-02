@@ -5,7 +5,7 @@ from config import LOG_GROUP_ID
 from ShrutiMusic import app
 from ShrutiMusic.utils.database import add_served_chat, get_assistant
 
-welcome_photo = "https://files.catbox.moe/ajobub.jpg"  # Bot added image
+welcome_photo = "https://graph.org/file/1f252b66ef3cab5fabb83-cfde487e32f52d12d7.jpg"  # Bot added image
 
 @app.on_message(filters.new_chat_members, group=-10)
 async def join_watcher(_, message):
