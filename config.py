@@ -86,10 +86,10 @@ AUTO_LEAVING_ASSISTANT = bool(os.getenv("AUTO_LEAVING_ASSISTANT", False))
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 START_IMG_URL = os.getenv("START_IMG_URL", "https://graph.org/file/8ea16bfc68c6285d5df04-30c69f3a5a8538dadd.jpg")
-PING_IMG_URL = os.getenv("PING_IMG_URL", "https://graph.org/file/1f252b66ef3cab5fabb83-cfde487e32f52d12d7.jpg")
-PLAYLIST_IMG_URL = "https://graph.org/file/1f252b66ef3cab5fabb83-cfde487e32f52d12d7.jpg"
-STATS_IMG_URL = "https://graph.org/file/1f252b66ef3cab5fabb83-cfde487e32f52d12d7.jpg"
-TELEGRAM_AUDIO_URL = "https://graph.org/file/1f252b66ef3cab5fabb83-cfde487e32f52d12d7.jpg"
+PING_IMG_URL = os.getenv("PING_IMG_URL", "https://files.catbox.moe/eehxb4.jpg")
+PLAYLIST_IMG_URL = "https://files.catbox.moe/eehxb4.jpg"
+STATS_IMG_URL = "https://files.catbox.moe/eehxb4.jpg"
+TELEGRAM_AUDIO_URL = "https://files.catbox.moe/eehxb4.jpg"
 TELEGRAM_VIDEO_URL = "https://files.catbox.moe/eehxb4.jpg"
 STREAM_IMG_URL = "https://files.catbox.moe/eehxb4.jpg"
 SOUNCLOUD_IMG_URL = "https://files.catbox.moe/eehxb4.jpg"
